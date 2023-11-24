@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Time-Latest Breaking News</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+    <nav>
+
+        <div class="main-nav container flex" id="sdiv">
+            <span id="curdate">1</span>
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="logo.jpg" alt="company logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="Cricket" onclick="onNavItemClick('cricket')">Cricket</li>
+                    <li class="hover-link nav-item" id="Technology" onclick="onNavItemClick('technology')">Technology</li>
+                    <li class="hover-link nav-item" id="Bollywood" onclick="onNavItemClick('Bollywood')">Bollywood</li>
+                    <li class="hover-link nav-item" id="Politics" onclick="onNavItemClick('Politics')">Politics</li>
+                    <li class="hover-link nav-item" id="Education" onclick="onNavItemClick('Education')">Education</li>
+                    <li class="hover-link nav-item" id="Business" onclick="onNavItemClick('Business')">Business</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g. Finance">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+    
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">Title</h3>
+                <h6 class="news-source" id="news-source">09/01/2024</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div>
+    </template>
+<footer>
+    <div class="end flex"><h3 class="con">Designed and Developed by Harsh Agarwal.All Rights Reserved.</h3></div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html> 
